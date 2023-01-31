@@ -2,28 +2,59 @@
 name = "o-in-foobar"
 input = ["./$project", "foobar", "o"]
 expected = "2"
-rubric = 20
+rubric = 10
 
 [[tests]]
 name = "r-in-foobar"
 input = ["./$project", "foobar", "r"]
 expected = "1"
-rubric = 20
+rubric = 10
 
 [[tests]]
 name = "oo-in-foobar"
 input = ["./$project", "foobar", "oo"]
 expected = "1"
-rubric = 20
+rubric = 10
 
 [[tests]]
 name = "fo-in-foobar"
 input = ["./$project", "foobar", "fo"]
 expected = "1"
-rubric = 20
+rubric = 10
 
 [[tests]]
 name = "invalid"
 input = ["./$project", "foobar"]
 expected = "invalid arguments"
-rubric = 20
+rubric = 10
+
+[[tests]]
+name = "super"
+input = ["./$project", "supercalifragilisticexpialidocious", "super"]
+expected = "1"
+rubric = 10
+
+[[tests]]
+name = "cali"
+input = ["./$project", "supercalifragilisticexpialidocious", "cali"]
+expected = "1"
+rubric = 10
+
+[[tests]]
+name = "fragile"
+input = ["./$project", "supercalifragilisticexpialidocious", "fragile"]
+expected = "0"
+rubric = 10
+
+[[tests]]
+name = "u-in-super"
+input = ["./$project", "supercalifragilisticexpialidocious", "u"]
+expected = "2"
+rubric = 10
+
+[[tests]]
+name = "i-in-super"
+input = ["./$project", "supercalifragilisticexpialidocious", "i"]
+expected = "7"
+rubric = 10
+
