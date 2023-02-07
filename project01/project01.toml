@@ -1,47 +1,54 @@
 [[tests]]
-name = "sunshine"
-input = ["./$project", "10k", "sunshine"]
-expected = "10k: match"
-rubric = 25
+name = "password"
+input = ["./$project", "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8"]
+expected = "password"
+rubric = 10
 
 [[tests]]
-name = "sunshone"
-input = ["./$project", "10k", "sunshone"]
-expected = "10k: no match"
-rubric = 25
+name = "123456789"
+input = ["./$project", "15e2b0d3c33891ebb0f1ef609ec419420c20e320ce94c65fbc8c3312448eb225"]
+expected = "123456789"
+rubric = 10
 
 [[tests]]
-name = "y@nk33s"
-input = ["./$project", "l33t", "y@nk33s"]
-expected = "l33t: match"
-rubric = 5
+name = "cs221rocks"
+input = ["./$project", "ab21b9ff03e6376d3b7a82a538e862f98feffac56361da6aee0c946ffefa21c1"]
+expected = "not found"
+rubric = 10
 
 [[tests]]
-name = "y@nk33ss"
-input = ["./$project", "l33t", "y@nk33ss"]
-expected = "l33t: no match"
-rubric = 5
+name = "netscape"
+input = ["./$project", "e3460d5f033911b6ef5f75b3f709f2d7c033acd90d73d01e8a7a238a461dc65f"]
+expected = "netscape"
+rubric = 10
+
+[[tests]]
+name = "singer"
+input = ["./$project", "92d74bb8bddbbb9c8b50ba880f92f070bd5fe84e95fe68ee1e4e8a8c4440302b"]
+expected = "singer"
+rubric = 10
+
+[[tests]]
+name = "n!n3r$"
+input = ["./$project", "7e016a27dae18f63bb89e1455273332e4eab64a5308575ab9494dc78f06960bc"]
+expected = "n!n3r$"
+rubric = 10
+
+[[tests]]
+name = "#@rl3y"
+input = ["./$project", "f82826ca508f2373f649a310e06f41f660188722db73a0b4c101b53f0eed8439"]
+expected = "#@rl3y"
+rubric = 10
 
 [[tests]]
 name = "yankees1"
-input = ["./$project", "plus1", "yankees1"]
-expected = "plus1: match"
-rubric = 5
-
-[[tests]]
-name = "yankeesx1"
-input = ["./$project", "plus1", "yankeesx1"]
-expected = "plus1: no match"
-rubric = 5
-
-[[tests]]
-name = "foobar"
-input = ["./$project", "entropy", "foobar"]
-expected = "bits of entropy: 28"
+input = ["./$project", "5a5edf336a635cafefa91f7c281e4a83572831308c9e42f2dfe0d5ce68fb959e"]
+expected = "yankees1"
 rubric = 10
 
 [[tests]]
-name = "passphrase"
-input = ["./$project", "entropy", "purple cow stapler mouse"]
-expected = "bits of entropy: 140"
+name = "frisco1"
+input = ["./$project", "350f87acbed079c76f818e04a5e190e2247208cfdf5eb25c97006cc30f6b12af"]
+expected = "frisco1"
 rubric = 10
+
