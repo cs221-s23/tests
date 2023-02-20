@@ -1,52 +1,30 @@
 [[tests]]
 name = "one-item"
-input = ["./$project", "$project_tests/one-item.csv"]
+input = ["./$project", "$project_tests/one-item.txt", "one-item-dictionary.txt"]
+output = "one-item-dictionary.txt"
 expected = """
-widgets: quantity: 1, aisle: 1, bin: 1
+3
+0b14d501a594442a01c6859541bcb3e8164d183d32937b851835442f69d5c94e,password1
+18f3c96386407ba486f6f6178a14639194e498c4f8338fc61bf2945653fe058a,p@$$w0rd
+5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8,password
 """
-rubric = 16
+rubric = 30
 
 [[tests]]
-name = "append"
-input = ["./$project", "$project_tests/append.csv"]
+name = "spec"
+input = ["./$project", "$project_tests/spec-passwords.txt", "spec-dictionary.txt"]
+output = "spec-dictionary.txt"
 expected = """
-widgets: quantity: 1, aisle: 1, bin: 1
-sprockets: quantity: 2, aisle: 2, bin: 2
+9
+0b14d501a594442a01c6859541bcb3e8164d183d32937b851835442f69d5c94e,password1
+154c4c511cbb166a317c247a839e46cac6d9208af5b015e1867a84cd9a56007b,123456781
+18f3c96386407ba486f6f6178a14639194e498c4f8338fc61bf2945653fe058a,p@$$w0rd
+5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8,password
+65e84be33532fb784c48129675f9eff3a682b27168c0ea744b2cf58ee02337c5,qwerty
+8e87f3b4d7e4a5bf207860f45f2a09f091928c549341bab786adaec8396e48aa,qw3r+y
+b6ad34b0b6b7e38f878a513b3f7927ebeb4cffb01aeb6d9fd9f9ad67fbc76517,qwerty1
+ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f,12345678
+ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f,12345678
 """
-rubric = 16
-
-[[tests]]
-name = "prepend"
-input = ["./$project", "$project_tests/prepend.csv"]
-expected = """
-widgets: quantity: 1, aisle: 1, bin: 1
-sprockets: quantity: 2, aisle: 2, bin: 2
-"""
-rubric = 16
-
-[[tests]]
-name = "reverse"
-input = ["./$project", "$project_tests/reverse.csv"]
-expected = """
-widgets: quantity: 1, aisle: 1, bin: 1
-sprockets: quantity: 2, aisle: 2, bin: 2
-hammers: quantity: 3, aisle: 4, bin: 5
-nails: quantity: 4, aisle: 5, bin: 6
-screwdrivers: quantity: 5, aisle: 6, bin: 7
-screws: quantity: 6, aisle: 7, bin: 8
-"""
-rubric = 16
-
-[[tests]]
-name = "alternating"
-input = ["./$project", "$project_tests/alternating.csv"]
-expected = """
-widgets: quantity: 1, aisle: 1, bin: 1
-sprockets: quantity: 2, aisle: 2, bin: 2
-hammers: quantity: 3, aisle: 4, bin: 5
-nails: quantity: 4, aisle: 5, bin: 6
-screwdrivers: quantity: 5, aisle: 6, bin: 7
-screws: quantity: 6, aisle: 7, bin: 8
-"""
-rubric = 16
+rubric = 70
 
