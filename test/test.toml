@@ -1,0 +1,12 @@
+[[tests]]
+name = "password"
+input = ["./$project", "1"]
+expected = "0"
+rubric = 10
+
+[[tests]]
+name = "niners1"
+input = ["./$project", "2"]
+expected = "0"
+rubric = 10
+
