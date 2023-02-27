@@ -1,6 +1,6 @@
 [[tests]]
 name = "empty"
-input = ["./$project", "_", "_", "_", "_", "_", "_", "_", "_", "_"]
+input = ["./$project", "empty"]
 expected = """
  _ | _ | _
 ---+---+---
@@ -8,11 +8,31 @@ expected = """
 ---+---+---
  _ | _ | _
 """
-rubric = 14
+rubric = 10
+
+[[tests]]
+name = "print"
+input = ["./$project", "print"]
+expected = """
+ _ | _ | _
+---+---+---
+ _ | _ | _
+---+---+---
+ _ | _ | _
+"""
+rubric = 5
+
+[[tests]]
+name = "init"
+input = ["./$project", "init"]
+expected = """
+init success
+"""
+rubric = 5
 
 [[tests]]
 name = "board"
-input = ["./$project", "X", "_", "O", "_", "X", "_", "_", "_", "O"]
+input = ["./$project", "board"]
 expected = """
  X | _ | O
 ---+---+---
@@ -20,11 +40,20 @@ expected = """
 ---+---+---
  _ | _ | O
 """
-rubric = 14
+rubric = 10
+
+[[tests]]
+name = "check"
+input = ["./$project", "check"]
+expected = """
+X wins
+"""
+rubric = 5
+
 
 [[tests]]
 name = "xhoriz"
-input = ["./$project", "X", "X", "X", "_", "O", "_", "_", "_", "O"]
+input = ["./$project", "xhoriz"]
 expected = """
  X | X | X
 ---+---+---
@@ -33,11 +62,11 @@ expected = """
  _ | _ | O
 X wins
 """
-rubric = 14
+rubric = 10
 
 [[tests]]
 name = "overt"
-input = ["./$project", "X", "X", "O", "_", "_", "O", "_", "_", "O"]
+input = ["./$project", "overt"]
 expected = """
  X | X | O
 ---+---+---
@@ -46,11 +75,11 @@ expected = """
  _ | _ | O
 O wins
 """
-rubric = 14
+rubric = 10
 
 [[tests]]
 name = "diag1"
-input = ["./$project", "O", "X", "X", "_", "O", "X", "X", "_", "O"]
+input = ["./$project", "diag1"]
 expected = """
  O | X | X
 ---+---+---
@@ -59,11 +88,11 @@ expected = """
  X | _ | O
 O wins
 """
-rubric = 14
+rubric = 15
 
 [[tests]]
 name = "diag2"
-input = ["./$project", "O", "X", "X", "_", "X", "X", "X", "_", "O"]
+input = ["./$project", "diag2"]
 expected = """
  O | X | X
 ---+---+---
@@ -72,11 +101,11 @@ expected = """
  X | _ | O
 X wins
 """
-rubric = 14
+rubric = 15
 
 [[tests]]
 name = "draw"
-input = ["./$project", "X", "O", "X", "O", "X", "O", "O", "X", "O"]
+input = ["./$project", "draw"]
 expected = """
  X | O | X
 ---+---+---
@@ -85,5 +114,5 @@ expected = """
  O | X | O
 draw
 """
-rubric = 16
+rubric = 15
 
