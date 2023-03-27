@@ -9,7 +9,7 @@ expected = """
  _ | _ | _
 O: 0 0
 """
-rubric = 14
+rubric = 10
 
 [[tests]]
 name = "offensive1"
@@ -22,7 +22,7 @@ expected = """
  _ | _ | _
 O: 0 1
 """
-rubric = 14
+rubric = 10
 
 [[tests]]
 name = "offensive2"
@@ -35,7 +35,22 @@ expected = """
  _ | _ | _
 O: 2 2
 """
-rubric = 14
+rubric = 10
+
+[[tests]]
+name = "offensive3"
+input = ["./$project", "-s", "4", "O", "O", "_", "O", "X", "_", "X", "X", "O", "X", "O", "X",  "O", "X", "O", "X"]
+expected = """
+ O | O | _ | O
+---+---+---+---
+ X | _ | X | X
+---+---+---+---
+ O | X | O | X
+---+---+---+---
+ O | X | O | X
+O: 0 2
+"""
+rubric = 10
 
 [[tests]]
 name = "defensive1"
@@ -48,7 +63,7 @@ expected = """
  _ | _ | _
 O: 0 1
 """
-rubric = 14
+rubric = 10
 
 [[tests]]
 name = "defensive2"
@@ -61,4 +76,19 @@ expected = """
  _ | _ | _
 O: 2 2
 """
-rubric = 14
+rubric = 10
+
+[[tests]]
+name = "defensive3"
+input = ["./$project", "-s", "4", "_", "O", "X", "O", "X", "_", "O", "O", "X", "X", "_", "X", "X", "_", "O", "_"]
+expected = """
+ _ | O | X | O
+---+---+---+---
+ X | _ | O | O
+---+---+---+---
+ X | X | _ | X
+---+---+---+---
+ X | _ | O | _
+O: 0 0
+"""
+rubric = 10
