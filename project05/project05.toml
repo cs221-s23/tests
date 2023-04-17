@@ -1,0 +1,13 @@
+[[tests]]
+name = "index"
+rubric = 100
+input = ['wget', 'localhost:8080/', '-O', 'index.html']
+output = "index.html"
+expected = """
+<!DOCTYPE html>
+<html>
+  <body>
+    Hello CS 221
+  </body>
+</html>
+"""
