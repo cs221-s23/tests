@@ -1,0 +1,13 @@
+[[tests]]
+name = "pong"
+rubric = 100
+input = ['sh', '$project_tests/test.sh']
+expected = """
+telnet: connect to address ::1: connection refused
+trying ::1...
+trying 127.0.0.1...
+connected to localhost.
+escape character is '^]'.
+pong
+connection closed by foreign host.
+"""
