@@ -1,7 +1,24 @@
+[project]
+timeout = 30
+
+# [[tests]]
+# name = "invalid"
+# rubric = 50
+# input = ['sh', '$project_tests/invalid.sh']
+# expected = """
+# telnet: connect to address ::1: connection refused
+# trying ::1...
+# trying 127.0.0.1...
+# connected to localhost.
+# escape character is '^]'.
+# invalid
+# connection closed by foreign host.
+# """
+
 [[tests]]
 name = "pong"
 rubric = 100
-input = ['sh', '$project_tests/test.sh']
+input = ['sh', '$project_tests/pong.sh']
 expected = """
 telnet: connect to address ::1: connection refused
 trying ::1...
@@ -11,3 +28,4 @@ escape character is '^]'.
 pong
 connection closed by foreign host.
 """
+
