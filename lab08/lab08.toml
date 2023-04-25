@@ -1,0 +1,36 @@
+[[tests]]
+name = "start"
+rubric = 1
+input = ['sh', '$project_tests/start.sh']
+output = "started.tmp"
+expected = "started"
+
+[[tests]]
+name = "index"
+rubric = 48
+input = ['sh', '$project_tests/index.sh']
+output = "index.html"
+expected = """
+<!DOCTYPE html>
+<html>
+  <body>
+    Hello CS 221
+  </body>
+</html>
+"""
+
+[[tests]]
+name = "not-found"
+rubric = 48
+input = ['sh', '$project_tests/not-found.sh']
+output = "not-found.tmp"
+expected = """
+HTTP request sent, awaiting response... 404 Not Found
+"""
+
+[[tests]]
+name = "stop"
+rubric = 1
+input = ['sh', '$project_tests/stop.sh']
+output = "stopped.tmp"
+expected = "stopped"
