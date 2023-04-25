@@ -7,7 +7,7 @@ expected = "started"
 
 [[tests]]
 name = "index"
-rubric = 48
+rubric = 49
 input = ['sh', '$project_tests/index.sh']
 output = "index.html"
 expected = """
@@ -21,7 +21,7 @@ expected = """
 
 [[tests]]
 name = "not-found"
-rubric = 48
+rubric = 49
 input = ['sh', '$project_tests/not-found.sh']
 output = "not-found.tmp"
 expected = """
