@@ -1,0 +1,22 @@
+[[tests]]
+name = "start"
+rubric = 1
+input = ['sh', '$project_tests/start.sh']
+output = "started.tmp"
+expected = "started"
+
+[[tests]]
+name = "pong"
+rubric = 98
+input = ['sh', '$project_tests/pong.sh']
+output = "pong.tmp"
+expected = """
+PONG
+"""
+
+[[tests]]
+name = "stop"
+rubric = 1
+input = ['sh', '$project_tests/stop.sh']
+output = "stopped.tmp"
+expected = "stopped"
