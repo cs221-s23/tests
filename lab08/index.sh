@@ -1,1 +1,1 @@
-export PORT=$(cat port.txt) && wget localhost:$PORT/ -O index.html
+export PORT=$(cat port.txt); wget localhost:$PORT/ -O index.html
