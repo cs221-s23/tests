@@ -8,6 +8,6 @@ trying ::1...
 trying 127.0.0.1...
 connected to localhost.
 escape character is '^]'.
-pong
+PONG
 connection closed by foreign host.
 """
